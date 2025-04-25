@@ -19,7 +19,9 @@ let mySJON = {
 
 console.table(mySJON)
 */
+
 // 07 - JSONArray: filter-Methode
+/*
 let myArray = [
     {
         "name": "Ilja",
@@ -58,5 +60,35 @@ console.table(result);
 
 let old = myArray.filter((element) => {return element['age'] < 18});
 console.table(old);
+*/
+
+// 08 - Aufgabe: findIndex-Methode
+// Aufgabe Mache das Gleiche wie mit Filter auch mit findIndex(), um den Index von Justus heraus zu finden.
+
+let myObjectArr = [
+    {
+        "name":"Max",
+        "is_a_good_guy": true 
+    },
+    {
+        "name":"Peter",
+        "is_a_good_guy": false 
+    },
+    {
+        "name":"Arnold",
+        "is_a_good_guy": true 
+    },
+    {
+        "name":"Justus",
+        "is_a_good_guy": true 
+    },
+    {
+        "name":"Bombur",
+        "is_a_good_guy": false 
+    }
+];
+
+console.table(myObjectArr.findIndex((element) => {return element['name'] == 'Justus' } )); // 3
+console.table(myObjectArr.findIndex((element) => element['name'] == 'Justus')); // kürzer
 
 
